@@ -23,8 +23,8 @@ class Note extends Component {
             <i>{ note.author }</i>
           </div>
           <div className="card-action">
-            <button onClick={this.toggleEdit}>Edit</button>
-            <button onClick={() => this.props.deleteNote(this.props.index)}>Delete</button>
+            <button className='btn stickybtn' onClick={this.toggleEdit} >Edit</button>
+            <button className='btn stickybtn' onClick={() => this.props.deleteNote(this.props.index) }>Delete</button>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ class Note extends Component {
           </div>
           <div className="card-action">
             <button onClick={this.toggleEdit} className='btn'>Cancel</button>
-            <button onClick={this.handleEdit}>Submit</button>
+            <button onClick={this.handleEdit} className='btn'>Submit</button>
           </div>
         </div>
       </div>

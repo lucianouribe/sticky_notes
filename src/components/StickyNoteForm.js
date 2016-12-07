@@ -24,21 +24,17 @@ class StickyNoteForm extends Component {
     return(
       <div>
         <form ref='noteForm' onSubmit={ this.handleSubmit }>
-          <div class="input-field col s6">
-            <label>Title</label>
-            <input type='text' ref='title' required />
+          <div className="input-field col s6">
+            <input type='text' ref='title' placeholder='title' required />
           </div>
-          <div class="input-field col s6">
-            <label>Content</label>
-            <textarea ref='body' required></textarea>
+          <div className="input-field col s6">
+            <textarea ref='body' placeholder='write your text here' required></textarea>
           </div>
-          <div class="input-field col s6">
-            <label>Author</label>
-            <input type='text' ref='author' required />
+          <div className="input-field col s6">
+            <input type='text' ref='author' placeholder='who are you?' required />
           </div>
-          <div class="input-field col s6">
-            <label>Color</label>
-            <input type='color' ref='color' required />
+          <div className="input-field col s6">
+            <input className='color' type='color' ref='color' value="#FFFFA5" required />
           </div>
             <br/>
             <input type='submit' className='btn' />
